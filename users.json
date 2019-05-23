@@ -35,22 +35,22 @@
             "registration": 1,
             "data_time": " "
       },
-      "-350806052 409068251": {
-            "id": 409068251,
-            "first_name": "Костя",
-            "last_name": "Яременко",
-            "username": "H1Username",
-            "score": 0,
-            "registration": 1,
-            "data_time": " "
-      },
       "409068251 409068251": {
             "id": 409068251,
             "first_name": "Костя",
             "last_name": "Яременко",
-            "username": "H1Username",
+            "username": "@H1Username",
             "score": 0,
             "registration": 1,
-            "data_time": " "
+            "data_time": ""
+      },
+      "-350806052 409068251": {
+            "id": 409068251,
+            "first_name": "Костя",
+            "last_name": "Яременко",
+            "username": "@H1Username",
+            "score": 0,
+            "registration": 1,
+            "data_time": ""
       }
 }

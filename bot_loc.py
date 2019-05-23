@@ -25,7 +25,6 @@ def reg(update, context):
     users = read_json()
     keys_all = users.keys()
     keys_main = str(update.message.chat_id) + " " + str(update.message.from_user.id) # начало кастыля, чтобы конктеризировать когото пишлось делать это
-    print(keys_main)
 
     if (keys_main) in keys_all:
         if users[keys_main]["registration"] == 1:
@@ -41,7 +40,7 @@ def reg(update, context):
             'id': update.message.from_user.id,
             'first_name': update.message.from_user.first_name,
             'last_name': update.message.from_user.last_name,
-            'username': update.message.from_user.username,
+            'username': "@" + update.message.from_user.username,
             'score': 0,
             'registration': 1,
             'data_time': "",
@@ -66,7 +65,7 @@ def users(update, context):
         if str(update.message.chat_id) in key:
             if value['registration'] == 1:
                 context.bot.send_message(chat_id=update.message.chat_id,
-                                         text=value['first_name']+ " " + str(value['score']))
+                                         text=value['first_name']+ " " + str(value['username'])+ " " + str(value['score']))
 def rand(update, context):
     users = read_json()
     empt_list = [] #список учасников

@@ -87,7 +87,7 @@ def rand(update, context):
         write_json(users)
     else:
         context.bot.send_message(chat_id=update.message.chat_id,
-                                 text="сегодня уже был победитель" + " " + users[hunted_user[0]]['first_name'])
+                                 text="сегодня уже был победитель" + " " + users[hunted_user[0]]['first_name']+ " " + str(users[hunted_user[0]]['username']))
 
 
 def cripta(update, context):
